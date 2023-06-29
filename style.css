@@ -173,6 +173,24 @@ section > h1 {
     margin-bottom: 30px;
 }
 
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact > p a {
+    color: black;
+}
+.contact > p:nth-child(1) {
+        margin-right: 20px;
+    }
+
+.inc {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+
 .inc > p:nth-child(2) {
     color: grey;
     font-size: 14px;
