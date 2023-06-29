@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('/node_modules/animate.css/animate.css');
+
+/* @media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  } */
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    height: auto;
+}
+body {
+    background-color: whitesmoke;
+}
+header {
+    height: 100vh;
+    background: url(/assets/header.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgb(216, 200, 178);
+    margin: 0 10px;
+    position: fixed;
+    top: 10px;
+    border-radius: 10px;
+}
+.navbar-brand {
+    font-family: 'Comforter', cursive;
+    font-size: 26px !important;
+    padding: 0 !important;
+    animation: rubberBand;
+    animation-duration: 2s;
+}
+
+.lists {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40vh auto;
+}
+.intro > p {
+    font-family: 'Pangolin', cursive;
+    font-size: 24px;
+    color: white;
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+/* **********DISPLAY FLEX****************
+************************************* */
+.mybtn, .fooot, .inc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mybtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.start {
+    margin-top: 25vh;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(228, 213, 190);
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+    color: black;
+}
+
+.arrow {
+    margin-top: 20px;
+    font-size: 30px;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+/* **********SECTION ONE****************
+************************************* */
+
+section > h1 {
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 23px;
+    width: 85px;
+    margin-left: 3vw;
+    border-radius: 3px;
+}
+.swipe {
+    text-align: right;
+    margin-right: 10vw;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.mycaard {
+    display: flex;
+    justify-content: space-around;
+}
+.ltst > p {
+    text-align: center;
+    color: rgb(101, 99, 99);
+    font-family: serif;
+    margin-top: 10px;
+}
+.pics {
+    width: 120px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+/* **********SECTION TWO****************
+************************************* */
+
+.about {
+    background-color: #918677;
+    margin-top: 20px;
+    padding: 30px 15px;
+    text-align: center;
+}
+.blondie {
+    border-radius: 3px;
+}
+.me > p {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #201a1a;
+    font-family: 'Caveat', cursive;
+}
+
+/* **********SECTION THREE****************
+************************************* */
+
+.card-grid {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 130px);
+    gap: 10px 0;
+}
+
+
+/* **********SECTION ARTS****************
+************************************* */
+
+
+.art-pic {
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* **********FOOTER****************
+************************************* */
+
+.fooot {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.mysocials {
+    margin-bottom: 30px;
+}
+
+.inc > p:nth-child(2) {
+    color: grey;
+    font-size: 14px;
+}
+
+.socialss {
+    color: gray;
+    margin: 0 10px;
+}
+.socialss a {
+    text-decoration: none;
+}
+.socialss:hover {
+    text-decoration: none;
+}
+.fac:hover {
+    color: rgb(31, 110, 206);
+}
+.ig:hover {
+    color: rgb(255, 0, 106);
+}
+.twit:hover {
+    color: rgb(0, 183, 255);
+}
+
+
+
+
+
+/* **********MEDIA QUERIES****************
+************************************* */
+
+
+@media (min-width: 720px) {
+    section > h1 {
+        margin: 50px auto 0px auto;
+        width:200px;
+    }
+    .about {
+        padding: 150px 0;
+    }
+    .me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .me > p {
+        margin-right: 30px;
+    }
+    .blondie {
+    margin: 0 30px;
+    width: 250px;
+    }
+    .fooot {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 70px 50px 20px 50px;
+    }
+    .inc {
+        flex-direction: row;
+    }
+    .inc > p:nth-child(1) {
+        margin-right: 20px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+}
+.about {
+        padding: 150px 0;
+    }
+    .blondie {
+    margin: 0 30px;
+    width: 300px;
+    }
+    .me > p {
+        font-size: 30px;
+    }
+}
+@media (min-width: 1280px) {
+
+    .intro > p {
+        font-size: 30px;
+    }
+    .me > p {
+        font-size: 35px;
+    }
+    .blondie {
+        width: 350px;
+    }
+}
