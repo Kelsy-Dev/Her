@@ -26,13 +26,13 @@
       }
   
       // Smooth scroll on anchor link click
-      var navLinks = document.querySelectorAll("nav a");
+      var navLinks = document.querySelectorAll("nav a, .mybtn a");
   
       navLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
           e.preventDefault();
           var target = this.getAttribute("href");
-          var duration = 3000; // Adjust scrolling speed here
+          var duration = 2000; // Adjust scrolling speed here
           smoothScroll(target, duration);
         });
       });
