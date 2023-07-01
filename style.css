@@ -14,6 +14,9 @@
     margin: 0;
     height: auto;
 }
+p {
+    margin-bottom: 0 !important;
+}
 body {
     background-color: whitesmoke;
 }
@@ -22,13 +25,16 @@ header {
     background: url(/assets/header.jpeg) no-repeat;
     background-size: cover;
 }
-
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 .navbar {
     background-color: rgb(216, 200, 178);
     margin: 0 10px;
-    position: fixed;
-    top: 10px;
     border-radius: 10px;
+    position: absolute;
+    top: 10px;
 }
 .navbar-brand {
     font-family: 'Comforter', cursive;
@@ -100,15 +106,29 @@ section > h1 {
 }
 .swipe {
     text-align: right;
-    margin-right: 10vw;
+    margin-right: 5vw;
     margin-bottom: 20px;
     font-size: 25px;
+}
+.swp {
+    margin-right: 10px;
+}
+.swiper {
+    width: 390px;
+    height: 260px;
+}
+.card-one {
+    display: flex !important;
+    justify-content: space-around;
 }
 .mycaard {
     display: flex;
     justify-content: space-around;
 }
-.ltst > p {
+.each-style {
+    height: 200px;
+}
+.each-style > p {
     text-align: center;
     color: rgb(101, 99, 99);
     font-family: serif;
@@ -164,8 +184,15 @@ section > h1 {
 /* **********FOOTER****************
 ************************************* */
 
-.fooot {
+footer {
+    background-color: black;
+    color: white;
     margin-top: 100px;
+    padding: 20px 0;
+}
+
+.fooot {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -179,21 +206,19 @@ section > h1 {
     margin-bottom: 30px;
 }
 .contact > p a {
-    color: black;
+    color: white;
 }
 .contact > p:nth-child(1) {
         margin-right: 20px;
     }
 
-.inc {
-    background-color: black;
-    color: white;
-    padding-top: 20px;
+.inc > p:nth-child(1) {
+    color: gray;
 }
-
 .inc > p:nth-child(2) {
     color: grey;
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 .socialss {
@@ -251,9 +276,14 @@ section > h1 {
     }
     .inc {
         flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
     }
     .inc > p:nth-child(1) {
         margin-right: 20px;
+    }
+    .inc > p:nth-child(2) {
+        margin-top: 0;
     }
     
 }
